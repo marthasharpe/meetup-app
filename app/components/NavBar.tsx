@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import classNames from "classnames";
+import { FaApple } from "react-icons/fa";
 
 const NavBar = () => {
   const currentPath = usePathname();
@@ -11,7 +12,7 @@ const NavBar = () => {
   ];
   return (
     <nav className="flex justify-between mb-6 h-16 px-6 border-b items-center">
-      <Link href="/">Logo</Link>
+      <FaApple />
       <ul className="flex gap-4">
         {links.map((link) => (
           <li key={link.href}>
